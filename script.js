@@ -29,6 +29,7 @@ VERSION:3.0
 FN:Juan Carlos Vasquez
 ORG:JC Carpet & Flooring Services
 TEL;TYPE=CELL:9545884816
+TEL;TYPE=WORK:3053169250
 URL:https://jccarpetflooring.com
 END:VCARD
   `.trim();
