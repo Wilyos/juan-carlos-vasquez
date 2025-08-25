@@ -76,6 +76,39 @@ span{
   border-bottom: 3px solid var(--main-color);
 }
 
+/* Keep navbar link color consistent even after being visited */
+.navbar a:link,
+.navbar a:visited {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+  color: var(--main-color);
+}
+
+/* If an <a> is ever used as a .btn (or inside a .btn), make it inherit
+   the button text color in all states and remove underline */
+.btn a:link,
+.btn a:visited,
+.btn a:hover,
+.btn a:focus,
+.btn a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Also support anchors directly styled as .btn */
+a.btn:link,
+a.btn:visited,
+a.btn:hover,
+a.btn:focus,
+a.btn:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 .gradient-btn{
   font-size: 1.8rem;
   padding: 1rem 2rem;
